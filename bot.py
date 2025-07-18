@@ -24,7 +24,7 @@ def save_access_data():
         json.dump(access_data, f)
 
 def is_admin(user_id):
-    return access_data["admin_id"] == user_id
+    return access_data["8078418903"] == user_id
 
 def is_approved(user_id):
     return user_id in access_data["approved_users"]
