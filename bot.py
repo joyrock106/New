@@ -74,7 +74,7 @@ def request_access(message):
         save_access_data()
         bot.reply_to(message, "Your request has been sent to the admin.")
 
-        admin_id = access_data["admin_id"]
+        admin_id = access_data["8078418903"]
         if admin_id:
             bot.send_message(admin_id, f"User {user_id} has requested access. Use /approve {user_id} to approve.")
     else:
