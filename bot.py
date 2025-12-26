@@ -6,7 +6,7 @@ import time
 import re
 import json
 
-BOT_TOKEN = "7659176544:AAEhXMiwIdeYkL_m-yGN4GMl8uuITe81gL0"
+BOT_TOKEN = "8453758508:AAE4evSOdEaVC6bffwdMKU92_PAs9Ge3VnY"
 bot = telebot.TeleBot(BOT_TOKEN)
 
 MAX_SIZE = 2 * 1024 * 1024 * 1024  # 2GB
@@ -17,7 +17,7 @@ if os.path.exists(DATA_FILE):
     with open(DATA_FILE, 'r') as f:
         access_data = json.load(f)
 else:
-    access_data = {"8078418903": None, "approved_users": [], "pending_requests": []}
+    access_data = {"7980572152": None, "approved_users": [], "pending_requests": []}
 
 def save_access_data():
     with open(DATA_FILE, 'w') as f:
